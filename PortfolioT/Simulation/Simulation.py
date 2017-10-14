@@ -123,8 +123,13 @@ plt. ylabel('net present value' )
 
 
 import numpy as np
-import traits.api as trapi
+improt pandas as pd
 
+class simulation_class(object):
+    def __init__(self, name, mar_env, corr):
+        try:
+            self.name = name
+            self.pricing_date = mar_env.pricing
 
             
             
